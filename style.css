@@ -1,0 +1,205 @@
+body {
+    font-family: "Bangers", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.header {
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    font-size: 1.35rem;
+    background-size: cover;
+    
+}
+
+.api1 {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.api1-txt1 {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: larger;
+}
+
+.api1-txt2 {
+    height: 50%;
+    width: 80%;
+    border: 5px solid #D8C4B6;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 3rem;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    font-size: large;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 1.5px;
+    line-height: 1.75rem;
+}
+
+.api1-txt1 button {
+    height: 2.5rem;
+    width: 8rem;
+    border: 2px solid #D8C4B6;
+    border-radius: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: large;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.api2 {
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.api2-txt1 {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: larger;
+}
+
+.api2-img {
+    height: 60%;
+    width: 50%;
+    border: 5px solid #D8C4B6;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    font-size: large;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 1.5px;
+    line-height: 1.75rem;
+    background-size: cover;
+}
+
+.api2-txt1 button {
+    height: 2.5rem;
+    width: 8rem;
+    border: 2px solid #D8C4B6;
+    border-radius: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: large;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.api3 {
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.api3-txt1 {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: larger;
+}
+
+.api3-txt2 {
+    height: 60%;
+    width: 50%;
+    border: 5px solid #D8C4B6;
+    border-radius: 1rem;
+    margin: auto;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 1.5px;
+    line-height: 1.75rem;
+}
+
+.api3-txt1 button {
+    height: 2.5rem;
+    width: 8rem;
+    border: 2px solid #D8C4B6;
+    border-radius: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: large;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.api4 {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.api4-txt1 {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: larger;
+}
+
+.api4-txt2 {
+    height: 50%;
+    width: 80%;
+    border: 5px solid #D8C4B6;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 3rem;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    font-size: large;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 1.5px;
+    line-height: 1.75rem;
+}
+
+.api4-txt1 button {
+    height: 2.5rem;
+    width: 8rem;
+    border: 2px solid #D8C4B6;
+    border-radius: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: large;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.api5 {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.api5-txt1 {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: larger;
+}
+
+.api5-txt2 {
+    height: 50%;
+    width: 80%;
+    border: 5px solid #D8C4B6;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 3rem;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    font-size: large;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 1.5px;
+    line-height: 1.75rem;
+}
+
+.api5-txt1 button {
+    height: 2.5rem;
+    width: 8rem;
+    border: 2px solid #D8C4B6;
+    border-radius: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: large;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
