@@ -1,17 +1,24 @@
-Project Name: API Wonderland
+API Wonderland
 
-Description:
+API Wonderland is a fun and interactive web application that calls various public APIs to display random content for users. From cat facts to dog pictures, fox images to random jokes, and even number facts, this project offers a variety of exciting and entertaining data that you can explore.
 
-I’m excited to share my latest project, API Wonderland, a fun and interactive web application that pulls random data from various APIs to brighten your day! 🌟
+Features:
 
-With API Wonderland, you can enjoy a mix of:
+Random Cat Facts: Displays a new fact about cats each time.
 
-Random Cat Facts 🐱
-Random Dog Pics 🐶
-Random Fox Images 🦊
-Random Jokes 😂
-Number Facts 🔢
-For this project, I used HTML and CSS for the frontend design and JavaScript to handle the backend API calls. The goal was to create a seamless user experience while exploring API integration and enhancing my frontend skills.
+Random Dog Pictures: Showcases random images of dogs to brighten your day.
 
-It was a fantastic learning experience, and I’m excited to keep building on it!
+Random Fox Images: Enjoy adorable pictures of foxes.
 
+Random Jokes: Get a random joke to lighten the mood.
+
+Random Number Facts: Learn interesting facts about any number.
+
+
+Technologies Used:
+
+HTML: To structure the content and create a clean, user-friendly interface.
+
+CSS: For styling and ensuring the layout is responsive and visually appealing.
+
+JavaScript: To fetch data from APIs and handle dynamic content loading.
