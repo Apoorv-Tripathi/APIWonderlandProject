@@ -1,0 +1,324 @@
+/* =============================================
+   API WONDERLAND — Stylesheet
+   Aesthetic: Retro-terminal meets comic pop
+   ============================================= */
+
+:root {
+    --orange:    #f83600;
+    --yellow:    #f9d423;
+    --pink:      #fa709a;
+    --cream:     #fff8ee;
+    --dark:      #1a1008;
+    --card-bg:   rgba(255,255,255,0.12);
+    --border:    rgba(255,255,255,0.35);
+    --radius:    1.2rem;
+    --shadow:    0 8px 32px rgba(248,54,0,0.18);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    background: var(--dark);
+    color: var(--cream);
+    overflow-x: hidden;
+}
+
+/* ---- HEADER ---- */
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* big background pattern */
+.header::before {
+    content: "API API API API API API API API API API API API API API API API API API API API";
+    position: absolute;
+    inset: 0;
+    font-family: "Bangers", cursive;
+    font-size: 7rem;
+    color: rgba(0,0,0,0.06);
+    word-break: break-all;
+    line-height: 1;
+    pointer-events: none;
+    letter-spacing: 0.5rem;
+}
+
+.header-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.header-tag {
+    display: inline-block;
+    background: var(--dark);
+    color: var(--yellow);
+    font-family: "Space Mono", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.header h1 {
+    font-family: "Bangers", cursive;
+    font-size: clamp(4rem, 14vw, 10rem);
+    letter-spacing: 0.1rem;
+    color: var(--dark);
+    text-shadow: 5px 5px 0 rgba(255,255,255,0.3);
+    line-height: 1;
+}
+
+.header-sub {
+    font-size: 1rem;
+    color: rgba(0,0,0,0.6);
+    margin-top: 1rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.header-scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,0.4);
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(10px); }
+}
+
+/* ---- SECTION COMMON ---- */
+.api-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 5rem 2rem;
+    background: linear-gradient(160deg, #1a1008 60%, #2a1510 100%);
+    position: relative;
+}
+
+/* alternating subtle tint */
+.api2, .api4 {
+    background: linear-gradient(160deg, #0f0f1a 60%, #1a0f20 100%);
+}
+
+.section-head {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.section-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    padding: 0.25rem 0.9rem;
+    border-radius: 2rem;
+}
+
+.section-head h1 {
+    font-family: "Bangers", cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    letter-spacing: 0.05rem;
+    color: var(--cream);
+    text-shadow: 3px 3px 0 var(--orange);
+}
+
+/* ---- BUTTONS ---- */
+.section-head button {
+    font-family: "Space Mono", monospace;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 0.7rem 2.2rem;
+    border: 2px solid var(--yellow);
+    border-radius: 0.6rem;
+    background: transparent;
+    color: var(--yellow);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-head button:hover {
+    background: var(--yellow);
+    color: var(--dark);
+    transform: translateY(-2px);
+}
+
+.section-head button:active {
+    transform: translateY(0);
+}
+
+.section-head button.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.section-head button.loading::after {
+    content: " ...";
+}
+
+/* ---- RESULT BOXES ---- */
+.result-box {
+    width: min(700px, 90vw);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    position: relative;
+    transition: border-color 0.3s;
+}
+
+.result-box.has-content {
+    border-color: var(--yellow);
+}
+
+/* text result */
+.text-result {
+    padding: 2rem 2rem 3.5rem;
+    min-height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-result h3 {
+    font-family: "Space Mono", monospace;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--cream);
+    letter-spacing: 0.03rem;
+    text-align: center;
+    white-space: pre-line;  /* so twopart jokes get the line break */
+}
+
+/* image result */
+.img-result {
+    min-height: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-result img {
+    width: 100%;
+    height: 100%;
+    max-height: 26rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    display: none;
+}
+
+.img-result img.visible {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* placeholder text */
+.placeholder-hint {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.05rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.placeholder-hint.hidden {
+    display: none;
+}
+
+.img-hint {
+    position: absolute;
+}
+
+/* copy button */
+.copy-btn {
+    position: absolute;
+    bottom: 0.8rem;
+    right: 1rem;
+    font-family: "Space Mono", monospace;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    background: transparent;
+    color: rgba(255,255,255,0.35);
+    cursor: pointer;
+    letter-spacing: 0.08rem;
+    transition: color 0.2s, border-color 0.2s;
+    display: none;
+}
+
+.copy-btn.visible {
+    display: block;
+}
+
+.copy-btn:hover {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.copy-btn.copied {
+    color: #6eeb83;
+    border-color: #6eeb83;
+}
+
+/* ---- FADE IN ---- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.97); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+.result-box.pop {
+    animation: fadeIn 0.4s ease;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+    background: var(--dark);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.1rem;
+}
+
+.footer-credit {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.15);
+}
+
+.footer-name {
+    color: var(--yellow);
+    letter-spacing: 0.15rem;
+}
